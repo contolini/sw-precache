@@ -37,6 +37,9 @@ function setDefaults(cli, configFileFlags) {
 
   compositeFlags.stripPrefix = compositeFlags.stripPrefix ||
     configFileFlags.stripPrefix || compositeFlags.root;
+  
+  compositeFlags.replacePrefix = compositeFlags.replacePrefix ||
+    configFileFlags.replacePrefix || compositeFlags.root;
 
   compositeFlags.stripPrefixMulti = compositeFlags.stripPrefixMulti ||
     configFileFlags.stripPrefixMulti || {};
